@@ -49,7 +49,7 @@ class SinglePost extends Component {
         this.setState({
           title: resData.data.post.title,
           author: resData.data.post.creator.name,
-          image: `https://node-graphql-express.herokuapp.com/graphql/${resData.data.post.imageUrl}`,
+          image: `https://node-graphql-express.herokuapp.com/${resData.data.post.imageUrl}`,
           date: new Date(resData.data.post.createdAt).toLocaleDateString(
             'en-US',
           ),
